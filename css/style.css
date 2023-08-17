@@ -1,0 +1,81 @@
+html,body{
+    height: 100%;
+}
+
+body{
+    font-size: 14px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: aqua;
+    display: grid;
+    grid-template-areas: "nav nav nav nav"
+                        "header header header header"
+                        "content1 content2 content3 content4"
+                          "footer footer footer footer";
+                          grid-template-columns: 1fr 1fr 1fr 1fr;
+                          grid-template-rows: 1fr 2fr 1fr 1fr;
+
+}
+nav{
+    display: inline-block;
+    grid-area: nav;
+
+}
+#goalkeepers{
+    background-color: brown;
+    grid-area: content1;
+    
+}
+#defenders{ background-color:darkgreen;
+    font-size: 12px;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 10px;
+    grid-area: content4;
+
+}
+
+.midfielders{
+    background-color: aquamarine;
+    font-size: 12px;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 10px;
+    grid-area: content2;
+}
+
+.forwards{
+    background-color: chartreuse;
+    font-size: 12px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 10px;
+    grid-area: content3;
+}
+footer{
+    background-color:chocolate;
+    font-size: 12px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 10px;
+    grid-area: footer;
+}
+.signings{
+    font-size: 18px;
+    color: brown;
+    font-style: italic;
+}
+
+footer{
+    background-color:chocolate;
+    font-size: 12px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 10px;
+    grid-area: footer;
+}
+
+header{
+    text-align: center;
+    grid-area: header;
+    color: crimson;
+}
+
+img{
+    width: 100px;
+    height: 100px;
+}
